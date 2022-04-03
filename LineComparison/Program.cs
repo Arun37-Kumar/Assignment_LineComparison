@@ -38,13 +38,18 @@ namespace LineComparison
             double firstLine = compare1.ComparisonLine(x1,x2,y1,y2);
             double secondLine = compare2.ComparisonLine(a1,a2,b1,b2);
             
-            if( firstLine == secondLine)
+            //Compare
+            if( firstLine > secondLine)
             {
-                Console.WriteLine("Both lines are equal");
+                Console.WriteLine("Line 1 is greater.");
+            }
+            else if( secondLine > firstLine )
+            {
+                Console.WriteLine("Line 3 is greater.");
             }
             else
             {
-                Console.WriteLine("Lines are not equal");
+                Console.WriteLine("Both are equal.");
             }
 
             Console.ReadLine();
