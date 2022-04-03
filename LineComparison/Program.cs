@@ -11,6 +11,9 @@ namespace LineComparison
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Line Comparison Problem.");
+            LineCompare compare = new LineCompare();
+            compare.ComparisonLine(12,30,5,10);
+            Console.ReadLine();
         }
     }
 }
