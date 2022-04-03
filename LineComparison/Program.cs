@@ -37,22 +37,22 @@ namespace LineComparison
             LineCompare compare2 = new LineCompare();
             double firstLine = compare1.ComparisonLine(x1,x2,y1,y2);
             double secondLine = compare2.ComparisonLine(a1,a2,b1,b2);
-            
-            //Compare
-            if( firstLine > secondLine)
+            compareTo(firstLine,secondLine);
+            Console.ReadLine();
+        }
+        public static void compareTo(double firstLine, double secondLine)
+        {
+            if (firstLine > secondLine)
             {
-                Console.WriteLine("Line 1 is greater.");
-            }
-            else if( secondLine > firstLine )
+                Console.WriteLine("First line is greater.");
+            }else if (secondLine > firstLine)
             {
-                Console.WriteLine("Line 3 is greater.");
+                Console.WriteLine("Second line is greater.");
             }
             else
             {
-                Console.WriteLine("Both are equal.");
+                Console.WriteLine("Both lines are equal.");
             }
-
-            Console.ReadLine();
         }
     }
 }

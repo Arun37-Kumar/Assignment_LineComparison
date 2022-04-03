@@ -19,9 +19,6 @@ namespace LineComparison
             //Console.WriteLine("Length : {0}", length);
             return length;
         }
-        public void compare()
-        {
-            
-        }
+
     }
 }
